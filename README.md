@@ -1,4 +1,7 @@
 # retail-sales-predictive
+This project tracks my daily progress as I build and improve my machine learning methods. 
+
+DAY ONE:
 Predictive analytics project on retail sales data 
 Seeing that Google Gemini can make basic generic charts from my data, from these charts we will try and use different models to predict sales from this specific retail store. 
 
