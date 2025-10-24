@@ -1,0 +1,31 @@
+Day Two Progress Report:
+
+Main objectives for today:
+Linear Regression Practice
+KNN Introduction
+MatPlotLib, Numpy, Pandas, SkiLearn (Adding to resume today)
+
+Housing Price Linear Regression
+Looking at code on kaggle about linear regression
+
+import libraries
+binning and imputations using medians for missing values
+in this practice, i filled missing total bedroom values with the total bedroom median
+
+now exploring EDA
+what to look for before doing regression:
+scatter plot linear patterns
+categorical data, use box plots
+avoid extreme outliers(ignored for now, will go back if prediction terrible)
+avoid perfect multicollinearity
+highly correlated features(the parameters) chose median income and ocean proximity
+
+ONE HOT ENCODING PROCESS
+turning ocean proximity to binary
+#One-hot encoding process turns categorical data into binary 
+Example:
+ocean_dummies = pd.get_dummies(df['ocean_proximity'], prefix = 'ocean', drop_first = True)
+df = pd.concat([df, ocean_dummies], axis = 1) #combine dataframes
+Linear regression
+My r squared was 57.6%, so that perctange of house prices can be explained by the parameters. A BIG COMEBACK FROM BEFORE. so 58 percent of the variance is explained but my predictions arent very precise. 
+Taking out outliers lowered my variance, but improved my dollar value predictions by 22 percent. Im starting to think that using linear regression with data whose plots are not that linear wasn't the best idea. I will be trying knn since it doesnt revolve around linearity and an equation mostly on the average points near it. KNN was even worse...than linear it has many requires but sounds nice when you think about it. 
